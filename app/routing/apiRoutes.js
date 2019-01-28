@@ -21,7 +21,7 @@ const findMatch = (me, friends) => {
 //**************************************************************************************//
 
 //*** Route Exports ********************************************************************//
-module.exports = (app) => {
+module.exports = app => {
     app.get('/api/friends', (req, res) => {
         console.log('Received GET request at /api/friends');
         res.json(friendData);
