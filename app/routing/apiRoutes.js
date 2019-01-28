@@ -27,9 +27,9 @@ module.exports = app => {
         res.json(friendData);
     });
     app.post('/api/friends', (req, res) => {
-        alert('Your top friend: ' + findMatch(req.body, friendData))
+        const topFriend = findMatch(req.body, friendData);
         friendData.push(req.body);
-        res.json(true);
+        res.json(topFriend);
     })
 }
 //**************************************************************************************//
