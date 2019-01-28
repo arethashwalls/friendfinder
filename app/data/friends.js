@@ -1,3 +1,4 @@
+//*** Helper function for generating fake data quickly **********************************//  
 const fakeScores = () => {
     let scores = [];
     for(let i = 0; i < 10; i++) {
@@ -5,7 +6,9 @@ const fakeScores = () => {
     }
     return scores;
 }
+//**************************************************************************************//  
 
+//*** The default friendsData object****************************************************//  
 module.exports = [
     {
         "name": "Ernst Stavro Blofeld",
@@ -37,3 +40,4 @@ module.exports = [
         "scores": fakeScores()
     }, 
 ]
+//**************************************************************************************//  
