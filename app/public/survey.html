@@ -2,25 +2,27 @@
 <html>
 
 <head>
-    <title>Friend Finder Survey</title>
+    <title>Not So Different | Survey</title>
 
     <meta name="description" content="" />
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/reset.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="assets/style.css" />
 </head>
 
 <body>
-
     <form id="survey">
-
-        <label for="name">Enter your blood-curdling appelation:</label>
-        <input type="text" id="name" name="name" required />
-        <label for="pic-link">Enter a link to an image of your repulsive visage:</label>
-        <input type="text" id="pic-link" name="pic-link" required />
-
+        <div>
+            <label for="name">Enter your blood-curdling appelation:</label>
+            <input type="text" id="name" name="name" required />
+        </div>
+        <div>
+            <label for="pic-link">Enter a link to an image of your repulsive visage:</label>
+            <input type="text" id="pic-link" name="pic-link" required />
+        </div>
         <p>1. When I’ve capture my arch-enemy, I’ll dispatch them quickly and pragmatically.</p>
         <div>
             <input type="radio" id="q1val1" name="q1" value="1" />
@@ -167,8 +169,23 @@
         </div>
     </form>
 
-    <script src="assets/script.js"></script>
+    <div id="profile-popup">
+            <div id="profile-content">
+                <section id="your-profile">
+                    <h3>Your Profile</h3>
+                    <h4 id="your-name">NAME</h4>
+                    <img id="your-pic" />
+                </section>
+                <section id="match-profile">
+                    <h3>Your Best Match</h3>
+                    <h4 id="match-name">NAME</h4>
+                    <img id="match-pic" />
+                </section>
+                <button id="close-profile" >Take Me Back</button>
+            </div>
+        </div>
 
+    <script src="assets/script.js"></script>
 </body>
 
 </html>
