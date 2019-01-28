@@ -1,0 +1,23 @@
+{
+  "name": "friendfinder",
+  "version": "1.0.0",
+  "description": "A simple full-stack application that matches users based on survey responses. Built for UA Coding Bootcamp.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arethashwalls/friendfinder.git"
+  },
+  "author": "Aretha SH Walls",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arethashwalls/friendfinder/issues"
+  },
+  "homepage": "https://github.com/arethashwalls/friendfinder#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
