@@ -92,6 +92,21 @@ input[type=text] {
     padding: 0 5px;
     font-size: 1rem;
 }
+.radioblock label {
+    display: inline-block;
+    text-align: center;
+    margin: 10px 40px;
+    flex-grow: 1;
+}
+input[type=radio] {
+    display: block;
+    margin: 0 auto;
+}
+.radioblock {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+}
 button {
     float: right;
     box-shadow: none;
