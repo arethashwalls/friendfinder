@@ -1,3 +1,89 @@
+/* Global Styles ********************************************/
+@font-face {
+    /* Font from Kingthings Fonts, retrieved from fontsquirrel.com */
+    /* See license here: https://www.fontsquirrel.com/license/Kingthings-Printingkit */
+    font-family: 'Printingkit';
+    src: url('./webfonts/Kingthings_Printingkit-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+html {
+    font-family: 'Rockwell Extra Bold', 'Rockwell Bold', monospace;
+    background-color: #7e4693;
+}
+
+/* Header Styles ********************************************/
+header {
+    margin: 30px 0;
+}
+h1, h2, h3 {
+    text-shadow: 0 2px 4px black;
+}
+h1, h2 {
+    text-align: center;
+}
+h1 {
+    font-family: 'Printingkit';
+    font-size: 6rem;
+    margin-bottom: 10px;
+}
+h2, h3 {
+    font-size: 1.6rem;
+}
+h4 {
+    font-size: 1.4rem;
+    margin: 10px 0;
+}
+
+/* Main Text Styles *****************************************/
+.container, .maintext {
+    width: 70%;
+    margin: 0 auto;
+}
+.maintext {
+    padding: 20px 30px;
+    background-color: #141301;
+}
+p, label{
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    color: #baad98
+}
+p, form div {
+    margin-bottom: 15px;
+}
+strong, em, a {
+    color: #d4bade;
+}
+a:visited {
+    color: #babade;
+}
+a:hover {
+    color: #a875bd;
+}
+a:active {
+    color: #7e4693;
+}
+strong {
+    font-weight: 700;
+}
+em {
+    font-style: italic;
+}
+
+/* Form Styles *********************************************/
+input[type=text] {
+    border: none;
+    box-shadow: none;
+    background-color: #d4bade;
+    width: 30%;
+    height: 32px;
+    padding: 0 5px;
+    font-family: 'Rockwell Extra Bold', 'Rockwell Bold', monospace;
+    font-size: 1rem;
+}
+
+/* Modal Styles ********************************************/
 #profile-popup {
     display: none;
     position: fixed;
@@ -10,9 +96,16 @@
     background-color: rgba(0,0,0,0.4);
 }
 #profile-content {
-    background-color: white;
-    margin: 15% auto; /* 15% from the top and centered */
+    background-color: #d4bade;
+    margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
+    width: 45%;
+}
+#your-profile, #match-profile {
+    width: 50%;
+    float: left;
+}
+#profile-popup img {
     width: 80%;
 }
