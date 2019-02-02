@@ -1,4 +1,4 @@
-# Not So Different
+# [Not So Different](https://radiant-stream-15157.herokuapp.com/)
 ## A simple full-stack application that matches users based on survey responses, built for UA Coding Bootcamp.
 
 **Not So Different** is a mock-dating-site that provides users with ten Likert-style questions then determines then returns their closest match, based on the FriendFinder homework assignment for UA Coding Bootcamp.
@@ -16,8 +16,25 @@
     * `assets` contains all images, stylesheets, webfonts, and the front-end script for handling events and AJAX calls, [`script.js`](/app/public/assets/script.js).
   * `routing` contains two JS files.
     * [`apiRoutes.js`](/app/routing/apiRoutes.js) contains GET and POST routes for the friends API, as well as the necessary functions for finding and returning the closest match for the posted profile.
-    * [htmlRoutes.js`](/app/routing/htmlRoutes.js) contains the GET routes for *Not So Different*'s two pages.
+    * [`htmlRoutes.js`](/app/routing/htmlRoutes.js) contains the GET routes for *Not So Different*'s two pages.
 * A `gitignore` file
 * NPM's `package-lock.json` and `package.json` files.
 * This `readme`.
 * A [`server.js`](/server.js) file for setting up the Express server.
+
+### Application:
+
+**Not So Different** is a full-stack application.
+
+#### Front End
+
+On the client side, the user fills out a survey. The [front-end JavaScript](/app/public/assets/script.js) waits for a click event on the submit button then captures the form values and posts them to the survey.
+
+As an experiment, I decided to try writing the front-end code without any external libraries. While some syntax (especially the Fetch API) might have been better implemented with a library, I've completed several projects with Axios or JQuery and wanted to try something different.
+
+`script.js` contains two other pieces of functionality; one for closing the modal that appears after the POST request is sent, and one for loading default images if any image links break.
+
+For styling, I had fun and embrassed the middle-school-ish theme.
+
+### Data
+
