@@ -41,6 +41,7 @@ document.querySelector('#close-profile').addEventListener('click', (e) => {
     document.querySelector('#profile-popup').style.display = 'none';
 });
 
+//Listen for image errors and load the default pictures if necessary:
 const replaceImageIfBroken = (id) => {
     document.querySelector(id).onerror = () => {
         console.log('Unable to load profile image.');
@@ -48,6 +49,5 @@ const replaceImageIfBroken = (id) => {
             id === '#your-pic' ? './assets/images/fillerpic.png' : './assets/images/matchfillerpic.png';
     }
 }
-
 replaceImageIfBroken('#your-pic');
 replaceImageIfBroken('#match-pic');

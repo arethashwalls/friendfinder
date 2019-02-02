@@ -11,6 +11,7 @@ const friendDif = (myScores, friendScores) => {
 }
 const findMatch = (me, friends) => {
     let topMatch= friends[0]; 
+    //Loop through each friend and replace topMatch each time a better match is found, so long as it's not the same profil:
     for(let i = 1; i < friends.length; i++) {
         if(friendDif(me.scores, topMatch.scores) > friendDif(me.scores, friends[i].scores)
         && me.name !== friends[i].name) {
@@ -27,6 +28,7 @@ module.exports = app => {
         console.log('Received GET request at /api/friends');
         res.json(friendData);
     });
+    //On receiving a new friend, push them to the friends array:
     app.post('/api/friends', (req, res) => {
         const topFriend = findMatch(req.body, friendData);
         friendData.push(req.body);
