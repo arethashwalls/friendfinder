@@ -34,6 +34,10 @@ h1 {
     font-size: 6rem;
     margin-bottom: 10px;
 }
+#headlink {
+    color: #141301;
+    text-decoration: none;
+}
 h2, h3 {
     font-size: 1.6rem;
 }
