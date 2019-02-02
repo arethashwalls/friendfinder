@@ -10,9 +10,10 @@ const friendDif = (myScores, friendScores) => {
     return totalDif;
 }
 const findMatch = (me, friends) => {
-    let topMatch = friends[0];
+    let topMatch= friends[0]; 
     for(let i = 1; i < friends.length; i++) {
-        if(friendDif(me.scores, topMatch.scores) > friendDif(me.scores, friends[i].scores)) {
+        if(friendDif(me.scores, topMatch.scores) > friendDif(me.scores, friends[i].scores)
+        && me.name !== friends[i].name) {
             topMatch = friends[i];
         }
     }

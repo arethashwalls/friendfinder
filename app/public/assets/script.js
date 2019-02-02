@@ -40,3 +40,14 @@ document.querySelector("#survey").addEventListener("submit", (e) => {
 document.querySelector('#close-profile').addEventListener('click', (e) => {
     document.querySelector('#profile-popup').style.display = 'none';
 });
+
+const replaceImageIfBroken = (id) => {
+    document.querySelector(id).onerror = () => {
+        console.log('Unable to load profile image.');
+        document.querySelector(id).src = 
+            id === '#your-pic' ? './assets/images/fillerpic.png' : './assets/images/matchfillerpic.png';
+    }
+}
+
+replaceImageIfBroken('#your-pic');
+replaceImageIfBroken('#match-pic');
