@@ -11,7 +11,7 @@ const friendDif = (myScores, friendScores) => {
 }
 const findMatch = (me, friends) => {
     let topMatch= friends[0]; 
-    //Loop through each friend and replace topMatch each time a better match is found, so long as it's not the same profil:
+    //Loop through each friend and replace topMatch each time a better match is found, so long as it's not the same profile:
     for(let i = 1; i < friends.length; i++) {
         if(friendDif(me.scores, topMatch.scores) > friendDif(me.scores, friends[i].scores)
         && me.name !== friends[i].name) {
