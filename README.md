@@ -20,4 +20,4 @@
 * A `gitignore` file
 * NPM's `package-lock.json` and `package.json` files.
 * This `readme`.
-* A `server.js` file for setting up the Express server.
+* A [`server.js`](/server.js) file for setting up the Express server.
