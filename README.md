@@ -34,7 +34,20 @@ As an experiment, I decided to try writing the front-end code without any extern
 
 `script.js` contains two other pieces of functionality; one for closing the modal that appears after the POST request is sent, and one for loading default images if any image links break.
 
-For styling, I had fun and embrassed the middle-school-ish theme.
+For styling, I had fun and embraced the middle-school-ish theme.
 
-### Data
+#### Data
 
+[`friends.js`](/app/data/friends.js) holds an array of friends (or, as it turned out, villians) as well as a helper method that generates random test scores. While the test may have been more fun if I'd filled out custom answers for each character, that wasn't really the focus of the assignment and I wanted to save time.
+
+For this particular application, we weren't asked to create persistant storage, so the array will only persist as long as the server is live.
+
+#### Routing
+
+The application's HTML routes are both simple GET routes.
+
+The API POST route includes the logic for determining the closest match. 
+
+#### Server
+
+[`server.js`](server.js) is mostly boilerplate and sets up our server.
